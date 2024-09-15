@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'chilax';
+  src: url('../fonts/Chillax-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'chilax', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.moving-image {
+  animation: moveLeftToRight 18s linear infinite;
+  position: absolute;
+}
+.dot-pattern {
+  background-image: radial-gradient(white 10%, transparent 10%);
+  background-size: 20px 20px;
+}
+
+
+.message-textarea {
+  line-height: 1.5em;
+  overflow-y: hidden;
+  resize: none;
+}
+
+.message-textarea, .message-input{
+  outline: 2px solid #3D5545;
+}
+
+.message-textarea:focus, .message-input:focus{
+  
+  outline-color: #4BB0AA;
+}
+
+.bars-icon{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav-icons-div, .nav-buttons-div {
+      display: none; 
+  }
+  .bars-icon{
+    display: block;
+  }
+  .nav-inner {
+      justify-content: space-between;
+  }
+  .site-icon-div{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  br{
+    display: none;
+  }
+}
+
+.flowing-text {
+  display: inline-block;
+  min-width: 100%; /* Ensures the text fills at least the full width of the container */
+  animation: flow 20s linear infinite; /* Adjust the duration for the speed */
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(0); /* Start at the normal position */
+  }
+  100% {
+    transform: translateX(-100%); /* End with the text fully scrolled off-screen */
+  }
+}
+
+
+.b-shadow{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
