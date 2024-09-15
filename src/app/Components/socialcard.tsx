@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Buzz from '../../assets/buzz.jpg'
 import { StaticImageData } from 'next/image';
 
 interface SocialCardProps {
