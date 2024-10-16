@@ -16,10 +16,10 @@ import Receiptify from '../../assets/receiptify.jpg'
 import LaptopZone from '../../assets/laptopzone.jpg'
 import Expense from '../../assets/expense-tracker.jpg'
 import Todo from '../../assets/todo.jpg'
-import Flux from '../../assets/flux.jpg'
+import CheckItOff from '../../assets/checkitoff.jpg'
 import Me from '../../assets/my.jpeg'
 import Profile from '../../assets/profile.jpeg'
-import Coma from '../../assets/coma.png'
+import Coma from '../../assets/coma.jpg'
 import LinkedIn from '../../assets/linkedin.webp'
 import Instagram from '../../assets/instagram.webp'
 import X from '../../assets/x.webp'
@@ -57,6 +57,14 @@ export default function Homepage(){
     ];
     const fullstackProjects = [
         {
+            title: 'CheckItOff',
+            features: ["Track current & upcoming tasks", 'Options for adding goals and notes', 'Clean & simple UI', 'Pomodoro timer'],
+            liveLink: 'https://checkitoff-frontend-v2.vercel.app/',
+            githubLink: 'https://github.com/abdulwahab5547/checkitoff-v1',
+            youtubeLink: 'https://checkitoff-frontend-v2.vercel.app/',
+            image: CheckItOff,  
+        },
+        {
             title: 'Buzz',
             features: ["See others' posts", 'Create posts, reels, and more', 'Text other users'],
             liveLink: 'https://buzz-theta.vercel.app/',
@@ -72,14 +80,6 @@ export default function Homepage(){
           youtubeLink: 'https://www.youtube.com/watch?v=jTMGR012c6M',
           image: Receiptify,
         },
-        {
-            title: 'Flux',
-            features: ["Track current & upcoming tasks", 'Create pages & add content', '3 different task views'],
-            liveLink: 'https://flux-frontend-alpha.vercel.app/',
-            githubLink: 'https://github.com/abdulwahab5547/flux',
-            youtubeLink: 'https://www.youtube.com/watch?v=DDYiXpnJXX0&t=92s',
-            image: Flux,  
-        },
     ];
     const socialCards = [
         {
@@ -89,7 +89,7 @@ export default function Homepage(){
         },
         {
             title: 'Instagram',
-            link: 'https://www.instagram.com/abduldevelops',
+            link: 'https://www.instagram.com/abdul.develops/',
             image: Instagram,  
         },
         {
@@ -131,7 +131,9 @@ export default function Homepage(){
                         data-aos="zoom-in"
                         data-aos-duration="1500"
                         >
-                            <button className='bg-orange hover:opacity-80 px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'><a href='#contact'>Grow With Me</a></button>
+                            <a href='#contact'>
+                                <button className='bg-orange hover:opacity-80 px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>Grow With Me</button>
+                            </a>
                         </div>
                     </div>
                     
@@ -201,9 +203,11 @@ export default function Homepage(){
                                         With skills in HTML, CSS, JavaScript, React, Node.js, and MongoDB, I can&apos;t wait to bring your ideas to life. Let&apos;s build something amazing together!
                                     </p>
                                     <div className='pt-7'>
-                                        <button className='bg-orange hover:opacity-80 text-white px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>
-                                            <a href='#contact'>Contact Me<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a>
-                                        </button>
+                                        <a href='#contact'>
+                                            <button className='bg-orange hover:opacity-80 text-white px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>
+                                                <span>Contact Me<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +255,7 @@ export default function Homepage(){
             <Image className='rotate-180' src={Ending} alt=''/>
             <div id="portfolio" className='projects bg-darkGreen text-white py-6'>
                 <div className='pt-12 pb-4'>
-                    <p className='text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>My <span className='text-orange'>Web dev</span> projects</p>
+                    <p className='text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>My <span className='text-orange'>key</span> projects</p>
                 </div>
                 <div className='w-[75%] m-auto'>
                     <LayoutGridDemo/>

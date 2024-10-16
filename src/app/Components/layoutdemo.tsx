@@ -19,6 +19,9 @@ const SkeletonOne = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Buzz is a social media app that lets you create your account, edit your profile, create posts that other users can see and react to, and so on. You can also chat with other users. 
       </p>
+      <a href="https://www.youtube.com/watch?v=mynmWzcjg_8" className="text-orange font-bold" target="_blank" rel="noopener noreferrer">
+        View on YouTube
+      </a>
     </div>
   );
 };
@@ -33,6 +36,9 @@ const SkeletonTwo = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         This expense tracker app lets you track your expenses. You can also download the expense report. Moreover, you can view top expenses by category. 
       </p>
+      <a href="https://abdulwahab5547.github.io/expense-tracker/" className="text-orange font-bold" target="_blank" rel="noopener noreferrer">
+        View live
+      </a>
     </div>
   );
 };
@@ -46,6 +52,9 @@ const SkeletonThree = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         This task management app lets you add today&apos;s and upcoming tasks. You can switch b/w 3 task views. There&apos;s also the option for creating pages and adding content in them. 
       </p>
+      <a href="https://www.youtube.com/watch?v=DDYiXpnJXX0&t=92s" className="text-orange font-bold" target="_blank" rel="noopener noreferrer">
+        View on YouTube
+      </a>
     </div>
   );
 };
@@ -59,6 +68,9 @@ const SkeletonFour = () => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         It&apos;s a receipt maker app that lets you create stunning receipts that you can easily customize. You can also download or email them. If you&apos;re logged in, the app also keeps track of all your receipts. 
       </p>
+      <a href="https://receiptify-app-wine.vercel.app/" className="text-orange font-bold" target="_blank" rel="noopener noreferrer">
+        View live
+      </a>
     </div>
   );
 };
