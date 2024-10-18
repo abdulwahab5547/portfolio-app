@@ -304,8 +304,8 @@ export default function Homepage(){
                             data-aos="fade-up-right"
                             data-aos-duration="1500"
                             className='flex flex-col justify-between py-6 pt-10 md:px-5'>
-                                {frontendProjects.slice(0, 3).map((project) => (
-                                    <Suspense fallback={<div>Loading...</div>}>
+                                {frontendProjects.slice(0, 3).map((project, index) => (
+                                    <Suspense key={index} fallback={<div>Loading...</div>}>
                                         <ProjectCard {...project} />
                                     </Suspense>
                                 ))}
@@ -322,8 +322,8 @@ export default function Homepage(){
                             data-aos="fade-up-left"
                             data-aos-duration="1500"
                             className='flex flex-col justify-between py-6 pt-10 md:px-5'>
-                                {fullstackProjects.slice(0, 3).map((project) => (
-                                    <Suspense fallback={<div>Loading...</div>}>
+                                {fullstackProjects.slice(0, 3).map((project, index) => (
+                                    <Suspense key={index} fallback={<div>Loading...</div>}>
                                         <ProjectCard {...project} />
                                     </Suspense>
                                 ))}
@@ -339,8 +339,8 @@ export default function Homepage(){
                     
                     {/* Social cards */}
                     <div className='flex flex-col justify-between md:flex-row gap-7'>
-                        {socialCards.slice(0, 4).map((card) => (
-                            <SocialCard {...card} />
+                        {socialCards.slice(0, 4).map((card, index) => ( // Add index as the second argument
+                            <SocialCard key={index} {...card} /> // Add key prop
                         ))}
                     </div>
                 </div>
