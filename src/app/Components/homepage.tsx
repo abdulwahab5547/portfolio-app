@@ -19,7 +19,6 @@ import LaptopZone from '../../assets/laptopzone.jpg'
 import Expense from '../../assets/expense-tracker.jpg'
 import Todo from '../../assets/todo.jpg'
 import CheckItOff from '../../assets/checkitoff.jpg'
-import Me from '../../assets/my.jpeg'
 import Profile from '../../assets/profile.jpeg'
 import Coma from '../../assets/coma.jpg'
 import LinkedIn from '../../assets/linkedin.webp'
@@ -305,9 +304,9 @@ export default function Homepage(){
                             data-aos="fade-up-right"
                             data-aos-duration="1500"
                             className='flex flex-col justify-between py-6 pt-10 md:px-5'>
-                                {frontendProjects.slice(0, 3).map((project, index) => (
+                                {frontendProjects.slice(0, 3).map((project) => (
                                     <Suspense fallback={<div>Loading...</div>}>
-                                        <ProjectCard key={index} {...project} />
+                                        <ProjectCard {...project} />
                                     </Suspense>
                                 ))}
                             </div>
@@ -323,9 +322,9 @@ export default function Homepage(){
                             data-aos="fade-up-left"
                             data-aos-duration="1500"
                             className='flex flex-col justify-between py-6 pt-10 md:px-5'>
-                                {fullstackProjects.slice(0, 3).map((project, index) => (
+                                {fullstackProjects.slice(0, 3).map((project) => (
                                     <Suspense fallback={<div>Loading...</div>}>
-                                        <ProjectCard key={index} {...project} />
+                                        <ProjectCard {...project} />
                                     </Suspense>
                                 ))}
                             </div>
@@ -340,8 +339,8 @@ export default function Homepage(){
                     
                     {/* Social cards */}
                     <div className='flex flex-col justify-between md:flex-row gap-7'>
-                        {socialCards.slice(0, 4).map((card, index) => (
-                            <SocialCard key={index} {...card} />
+                        {socialCards.slice(0, 4).map((card) => (
+                            <SocialCard {...card} />
                         ))}
                     </div>
                 </div>
