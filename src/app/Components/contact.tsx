@@ -19,7 +19,7 @@ function ContactSection() {
   };
 
   return (
-    <div id="contact" className="contact-section bg-darkGreen text-white pb-4 pt-16">
+    <div className="contact-section bg-darkGreen text-white pb-4 pt-16">
       <Toaster />
       <div className="flex flex-col items-center text-center px-5">
         <h1 className='py-4 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold'>

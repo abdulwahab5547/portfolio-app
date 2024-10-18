@@ -1,7 +1,10 @@
 import { useState } from 'react';
 
-export default function Navbar(){
+interface NavbarProps {
+  activeLink: string;
+}
 
+export default function Navbar({ activeLink }: NavbarProps){
     const [isPhoneNavVisible, setIsPhoneNavVisible] = useState(false);
     const togglePhoneNav = () => {
         setIsPhoneNavVisible(!isPhoneNavVisible);
@@ -25,10 +28,10 @@ export default function Navbar(){
                             </div>
                             <div className="w-[34%] flex justify-center nav-icons-div">
                                 <ul className="nav-icons flex gap-5">
-                                    <li  className="hover:text-orange"><a href="#home">Home</a></li>
-                                    <li  className="hover:text-orange"><a href="#about">About</a></li>
-                                    <li  className="hover:text-orange"><a href="#portfolio">Portfolio</a></li>
-                                    <li  className="hover:text-orange"><a href="#contact">Contact</a></li>
+                                    <li className={`hover:text-orange ${activeLink === 'home' ? 'text-orange' : ''}`}><a href="#home">Home</a></li>
+                                    <li className={`hover:text-orange ${activeLink === 'about' ? 'text-orange' : ''}`}><a href="#about">About</a></li>
+                                    <li className={`hover:text-orange ${activeLink === 'portfolio' ? 'text-orange' : ''}`}><a href="#portfolio">Portfolio</a></li>
+                                    <li className={`hover:text-orange ${activeLink === 'contact' ? 'text-orange' : ''}`}><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                             <div className="nav-buttons flex gap-5 w-[%33] ml-auto nav-buttons-div">
@@ -50,10 +53,10 @@ export default function Navbar(){
             <div className="absolute z-50 h-screen w-[100%] bottom-[-10] bg-darkGreen text-white px-4 flex flex-col items-center pt-10 pb-5">
                 <div className="">
                     <ul className="nav-icons flex gap-5 flex-col text-center text-lg">
-                        <li onClick={hidePhoneNav} className="hover:text-orange py-1"><a href="#home">Home</a></li>
-                        <li onClick={hidePhoneNav} className="hover:text-orange py-1"><a href="#about">About</a></li>
-                        <li onClick={hidePhoneNav} className="hover:text-orange py-1"><a href="#portfolio">Portfolio</a></li>
-                        <li onClick={hidePhoneNav} className="hover:text-orange py-1"><a href="#contact">Contact</a></li>
+                        <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'home' ? 'text-orange' : ''} py-1`}><a href="#home">Home</a></li>
+                        <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'about' ? 'text-orange' : ''} py-1`}><a href="#about">About</a></li>
+                        <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'portfolio' ? 'text-orange' : ''} py-1`}><a href="#portfolio">Portfolio</a></li>
+                        <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'contact' ? 'text-orange' : ''} py-1`}><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div className="flex flex-col pt-3 items-center">          
