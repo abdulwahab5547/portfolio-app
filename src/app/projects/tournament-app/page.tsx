@@ -12,6 +12,7 @@ import Nine from '@/assets/tournament/9.jpg'
 import Fourteen from '@/assets/tournament/14.jpg'
 import Seventeen from '@/assets/tournament/17.jpg'
 import Eighteen from '@/assets/tournament/18.jpg'
+import Navbar from '@/app/Components/navbar'
 import Footer from '@/app/Components/footer'
 
 import React, { useState } from 'react';
@@ -32,25 +33,12 @@ function Project(){
 
     return(
         <div>
-            <div className="bg-darkGreen text-white py-5">
-                <div className='flex justify-between max-w-[95%] m-auto items-center'>
-                    <div className="site-icon-div">
-                        <p>
-                            <a href="/">
-                                <span className="text-2xl font-bold pr-1">Aw. </span>
-                                <span className="text-xl text-orange">|</span>
-                                <span className="pl-1 font-bold"> Abdul Wahab.</span>
-                            </a>
-                        </p>
-                    </div>
-                    <div className="py-3">
-                        <ul className="footer-icons flex gap-5 text-xl md:text-2xl">
-                            <a href="https://www.linkedin.com/in/aw-asif/"><li className="cursor-pointer"><i className="fa-brands fa-linkedin"></i></li></a>
-                            <a href="https://www.instagram.com/abdul.develops/"><li className="cursor-pointer"><i className="fa-brands fa-instagram"></i></li></a>
-                            <a href="https://github.com/abdulwahab5547"><li className="cursor-pointer"><i className="fa-brands fa-github"></i></li></a>
-                        </ul>
-                    </div>
-                </div>
+            <div className="sticky top-0 z-50">
+                <Navbar activeLink="project"/>
+            </div>
+            <div className="bg-darkGreen text-white pb-5">
+                
+                
                 
                 <div className="max-w-[95%] m-auto py-32">
                     
