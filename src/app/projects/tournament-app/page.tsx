@@ -49,7 +49,7 @@ function Project(){
                     </div>
 
                     <div className="flex gap-3 pt-5">
-                        <button className="bg-orange hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="#contact">GitHub<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
+                        <button className="bg-orange hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="https://github.com/abdulwahab5547">GitHub<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
                         {/* <button className="bg-lightGreen hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="#portfolio">View Live<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button> */}
                     </div>
                 </div>
