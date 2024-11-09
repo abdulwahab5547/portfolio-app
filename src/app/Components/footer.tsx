@@ -9,10 +9,10 @@ function Footer(){
                 </div>
                 <div className="py-4">
                     <ul className="nav-icons flex flex-col md:flex-row gap-5">
-                        <li className="hover:text-orange"><a href="#home">Home</a></li>
-                        <li className="hover:text-orange"><a href="#about">About</a></li>
-                        <li className="hover:text-orange"><a href="#portfolio">Portfolio</a></li>
-                        <li className="hover:text-orange"><a href="#contact">Contact</a></li>
+                        <li className="hover:text-orange"><a href="/#home">Home</a></li>
+                        <li className="hover:text-orange"><a href="/#about">About</a></li>
+                        <li className="hover:text-orange"><a href="/#portfolio">Portfolio</a></li>
+                        <li className="hover:text-orange"><a href="/#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

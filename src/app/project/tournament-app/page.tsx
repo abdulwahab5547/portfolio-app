@@ -2,7 +2,6 @@
 
 import Ending from '@/assets/ending.png'
 import Image from 'next/image'
-import CheckItOff from '@/assets/checkitoff.jpg'
 import One from '@/assets/tournament/1.jpg'
 import Two from '@/assets/tournament/2.jpg'
 import Three from '@/assets/tournament/3.jpg'
@@ -72,14 +71,8 @@ function Project(){
             <div className='max-w-[95%] m-auto py-5'>
                 <div className='py-3'>
                     <h2 className='font-bold md:text-4xl text-3xl'>Problems solved</h2>
-                    <div className='max-w-[950px] pl-5 py-3'>
-                        <ul className="list-disc text-lg">
-                            <li>Difficulties in creating different screens for various roles (operators, managers, players)</li>
-                            <li>Challenges in testing the entire workflow of the project</li>
-                            <li>Ensuring the security of project routes</li>
-                            <li>Managing the display screen for different devices</li>
-                            <li>Ensuring seamless functionality of the app</li>
-                        </ul>
+                    <div className='max-w-[950px] py-3 text-lg'>
+                        <p>My client wanted a powerful tournament app to manage games in his restaurant. I built a web app with roles for managers, operators, and players. Managers can create tournaments and handle details. Operators manage teams, players, and enter scores. Team leaders create teams and add players. A display screen shows real-time tournament progress, so everyone stays updated. This app makes it easy for different people to manage and track games. </p>
                     </div>
                 </div>
 
@@ -87,25 +80,21 @@ function Project(){
                     <h2 className='font-bold md:text-4xl text-3xl'>Challenges I ran into</h2>
                     <div className='max-w-[950px] pl-5 py-3'>
                         <ul className="list-disc text-lg">
-                            <li>Difficulties in creating different screens for various roles (operators, managers, players)</li>
-                            <li>Challenges in testing the entire workflow of the project</li>
-                            <li>Ensuring the security of project routes</li>
-                            <li>Managing the display screen for different devices</li>
-                            <li>Ensuring seamless functionality of the app</li>
+                            <li className="py-1"><strong>Managing Different Roles:</strong> Since I was building features for various roles like managers, operators, and players was challenging. I had to make sure each role only accessed its specific features—like managers creating and ending tournaments. This required precise role-based access control.</li>
+                            <li className="py-1"><strong>Real-Time Updates:</strong> I had to sync real-time updates for the display screen, which showed tournament registration, match progress, and player scores. It was a bit complex. I had to ensure instant data synchronization to keep the display screen accurate.</li>
+                            <li className="py-1"><strong>Testing:</strong> Testing was tough because of the different roles. I simulated the entire tournament workflow multiple times on my laptop to find and fix as many bugs as possible.</li>
+                            <li className="py-1"><strong>Limited Time:</strong> I had only 3 weeks to complete the project. I organized the tasks into milestones: Week 1 focused on the frontend, Week 2 on backend and logic, and Week 3 on adding extra features and final testing.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className='py-3'>
                     <h2 className='font-bold md:text-4xl text-3xl'>Things I learned</h2>
-                    <div className='max-w-[950px] pl-5 py-3'>
-                        <ul className="list-disc text-lg">
-                            <li>Difficulties in creating different screens for various roles (operators, managers, players)</li>
-                            <li>Challenges in testing the entire workflow of the project</li>
-                            <li>Ensuring the security of project routes</li>
-                            <li>Managing the display screen for different devices</li>
-                            <li>Ensuring seamless functionality of the app</li>
-                        </ul>
+                    <div className='max-w-[950px] text-lg py-3'>
+                        <p className='py-1'>This project was tough but it taught me some key skills. First, I learned about role-based access control—setting up specific permissions for each user role was important for security and clarity in the app. </p>
+                        <p className='py-1'>Another big learning point was creating a real-time data synchronization system for the display screen. It taught me how to update app data instantly and consistently.</p>
+                        <p className='py-1'>Apart from that, managing multiple user flows enhanced my testing skills, as I saw the importance of testing functions specific to each role.</p>
+                        
                     </div>
                 </div>
 
