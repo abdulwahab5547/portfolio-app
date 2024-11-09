@@ -28,7 +28,6 @@ import GitHub from '../../assets/github.png'
 
 import {LayoutGridDemo} from './layoutdemo';
 
-
 export default function Homepage(){
     const [activeLink, setActiveLink] = useState('home'); // State to track active link
 

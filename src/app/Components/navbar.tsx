@@ -18,13 +18,13 @@ export default function Navbar({ activeLink }: NavbarProps){
             <div className="navbar bg-darkGreen">
                         <div className="nav-inner flex items-center px-8 py-4 text-white">
                             <div className="w-[33%] site-icon-div">
-                            <p>
-                                <a href="#home">
+                                <p>
+                                    <a href="#home">
                                         <span className="text-2xl font-bold pr-1">Aw. </span>
                                         <span className="text-xl text-orange">|</span>
                                         <span className="pl-1 font-bold"> Abdul Wahab.</span>
                                     </a>
-                            </p>
+                                </p>
                             </div>
                             <div className="w-[34%] flex justify-center nav-icons-div">
                                 <ul className="nav-icons flex gap-5">
