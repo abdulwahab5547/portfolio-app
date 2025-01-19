@@ -45,7 +45,7 @@ function Project(){
                         <p className="md:text-xl text-lg py-2 text-orange font-bold">Project</p>
                         <h1 className="md:text-6xl text-4xl font-bold py-3">Web Scraping Project</h1>
                         <div className=''>
-                            <p className="py-2 text-xl text-gray-400">It's a web scraping script that scraps all categories and products from an E-Commerce website, stores them in a database, and updates that data on another E-commerce website.</p>
+                            <p className="py-2 text-xl text-gray-400">It&apos;s a web scraping script that scraps all categories and products from an E-Commerce website, stores them in a database, and updates that data on another E-commerce website.</p>
                         </div>
 
                         <div className="flex gap-3 pt-5">
