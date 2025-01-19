@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, features, liveLink, githubLink, youtubeLink, image }) => {
   return (
-    <div className='py-4'>
+    <div className='py-4 w-1/2 max-w-[380px]'>
       <div className='bg-white px-4 md:px-7 py-6 rounded-3xl b-shadow'>
 
       
