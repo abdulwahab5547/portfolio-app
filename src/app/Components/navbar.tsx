@@ -16,7 +16,7 @@ export default function Navbar({ activeLink }: NavbarProps) {
     return (
         <div className="relative">
             <div className="navbar bg-darkGreen">
-                <div className="nav-inner flex items-center px-8 py-4 text-white">
+                <div className="nav-inner flex items-center px-8 py-4 text-white md:max-w-[1280px] md:m-auto">
                     <div className="w-[33%] site-icon-div">
                         <p>
                             <a href="#home">
@@ -36,14 +36,6 @@ export default function Navbar({ activeLink }: NavbarProps) {
                     </div>
                     <div className="nav-buttons flex gap-5 w-[%33] ml-auto nav-buttons-div">
 
-                        <a href="/#contact" className="inline-block">
-                            <button className="bg-orange hover:opacity-80 font-semibold px-5 py-3 rounded-full">
-                                Contact Me
-                                <span className="pl-3">
-                                    <i className="fa-solid fa-arrow-right"></i>
-                                </span>
-                            </button>
-                        </a>
                         <a href="/#portfolio" className="inline-block">
                             <button className="bg-lightGreen hover:opacity-80 font-semibold px-5 py-3 rounded-full">
                                 See My Work
@@ -52,6 +44,15 @@ export default function Navbar({ activeLink }: NavbarProps) {
                                 </span>
                             </button>
                         </a>
+                        <a href="/#contact" className="inline-block">
+                            <button className="bg-orange hover:opacity-80 font-semibold px-5 py-3 rounded-full">
+                                Contact Me
+                                <span className="pl-3">
+                                    <i className="fa-solid fa-arrow-right"></i>
+                                </span>
+                            </button>
+                        </a>
+
 
                     </div>
 

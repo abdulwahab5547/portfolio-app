@@ -5,12 +5,11 @@ import { useEffect, useState } from 'react';
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
-import Navbar from './navbar'
-import Footer from './footer'
-import SocialCard from './socialcard'
-import ContactSection from './contact'
+import Navbar from '../Components/navbar'
+import Footer from '../Components/footer'
+import SocialCard from '../Components/socialcard'
+import ContactSection from '../Components/contact'
 import Image from 'next/image';
-import Maleeha from "@/assets/maleeha.jpeg"
 
 import Ending from '../../assets/ending.png'
 // import Tech from '../../assets/tech.jpg'
@@ -29,9 +28,9 @@ import Instagram from '../../assets/instagram.webp'
 import X from '../../assets/x.webp'
 import GitHub from '../../assets/github.png'
 
-import { LayoutGridDemo } from './layoutdemo';
+import { LayoutGridDemo } from '../Components/layoutdemo';
 
-export default function Homepage() {
+export default function MVP() {
     const [activeLink, setActiveLink] = useState('home'); // State to track active link
 
     useEffect(() => {
@@ -140,13 +139,10 @@ export default function Homepage() {
     });
 
     const stats = [
-        { count: 30, label: "projects", sublabel: "completed" },
+        { count: 20, label: "projects", sublabel: "completed" },
         { count: 12, label: "satisfied", sublabel: "customers" },
         { count: 2, label: "years of", sublabel: "experience" },
     ];
-
-
-    const MaleehaReview = "“Abdul has helped me with some of my website projects and he knows exactly how to translate my complex designs into well-functioning finished products. I recommend him to anyone who's looking for a talented and skilled developer for their projects or business.”"
 
 
     return (
@@ -163,7 +159,7 @@ export default function Homepage() {
                 data-aos-duration="1000"
                 className='main-part bg-darkGreen  text-white'>
 
-                <div className='md:pt-40 pt-16 pb-10 text-center relative'>
+                <div className='py-40 text-center relative'>
 
                     <div className="text-wrapper absolute top-3 overflow-hidden whitespace-nowrap w-full hidden lg:flex items-center">
                         <span className="flowing-text select-none uppercase text-9xl opacity-5 font-extrabold ">
@@ -171,30 +167,18 @@ export default function Homepage() {
                         </span>
                     </div>
                     <div className='px-5'>
-                        <h1 className='py-4 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold no-select'>Custom websites that <br /> help your brand <span className='text-orange'>grow.</span> </h1>
-                        <p className='py-4 text-xl md:text-2xl lg:text-2xl   text-gray-400'>WordPress or fully coded,<br /> built to fit your needs.</p>
+                        <h1 className='py-4 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold no-select'>Building your dream <br />with custom<span className='text-orange'> MVPs</span></h1>
+                        <p className='py-4 text-md sm:text-xl md:text-2xl lg:text-2xl   text-gray-400'>Custom web solutions to help launch your dream project.</p>
                         <div className='py-4'
                             data-aos="zoom-in"
                             data-aos-duration="1500"
                         >
                             <a href='#contact'>
-                                <button className='bg-orange hover:opacity-80 px-6 py-3  md:px-6 lg:px-9 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>Start Now</button>
+                                <button className='bg-orange hover:opacity-80 px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>Get Your MVP</button>
                             </a>
                         </div>
                     </div>
 
-                </div>
-
-
-                <div className='pb-14 pt-5 max-w-[600px] m-auto md:px-0 px-4'>
-                    <div className='flex justify-center pb-2'>
-                        <Image alt='Maleeha' src={Maleeha} className='max-w-[80px] max-h-[80px] rounded-full' />
-                    </div>
-                    <p className='pt-2  text-sm sm:text-lg md:text-xl lg:text-xl text-center text-gray-400 font-bold'>Maleeha Asif - Business Owner</p>
-
-                    <p className='py-4 italic text-md sm:text-xl md:text-2xl lg:text-2xl text-center text-gray-400'>
-                        {MaleehaReview}
-                    </p>
                 </div>
 
                 {/* <div className='py-4 pt-8'>
@@ -220,7 +204,7 @@ export default function Homepage() {
             <Image className='' src={Ending} alt='' />
 
             <div id="about">
-                <div className='about-me py-6 pb-4 md:pb-12 md:max-w-[1220px] md:m-auto'>
+                <div className='about-me py-6 pb-4 md:pb-12'>
                     <div className='text-center'>
                         <h2 className='py-4 text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold text-textGreen'>I&apos;m Abdul Wahab</h2>
                         <div className='flex gap-3 md:gap-6 justify-center pt-2 px-2'>
@@ -239,7 +223,7 @@ export default function Homepage() {
                         </div>
                     </div>
 
-                    <div className='flex flex-col md:flex-row justify-between items-center pt-5 md:pt-12 m-auto gap-4 md:px-0 px-4'>
+                    <div className='flex flex-col md:flex-row justify-between items-center pt-5 md:pt-12 w-[75%] m-auto gap-4'>
                         <div
                             data-aos="fade-right"
                             data-aos-duration="1500"
@@ -248,22 +232,21 @@ export default function Homepage() {
                                 <div className=''>
 
                                     <div className='pb-3'>
-                                        <Image src={Coma} alt='' className='md:w-[70px] lg:w-[70px] sm:w-[50px] w-[30px]' />
+                                        <Image src={Coma} alt='' className='md:w-[70px] lg:w-[70px] sm:w-[50px] w-[30px]'/>
                                     </div>
 
                                     <div className=''>
-                                        <div className='flex flex-col gap-4 text-md sm:text-md md:text-lg lg:text-xl md:pr-10'>
-                                            <p>
-                                                It all started with a dusty old Pentium 4 my dad gave me. I spent hours on it building empires and cities in Age of Empire and other games.
+                                        <div className='flex flex-col gap-4 text-md sm:text-md md:text-lg lg:text-xl'>
+                                            <p className=''>
+                                                I&apos;ve always loved building. It started with a Pentium 4 PC my father gave me, where I spent hours creating kingdoms in Age of Empires. As I upgraded my setup, I moved on to building houses in The Sims 4, then cities in Tropico 4 and Cities: Skylines.
                                             </p>
-                                            <p>
-                                                These days, I build for the real world. For quick and flexible sites—like landing pages or portfolios—I usually go with WordPress and Elementor. It’s fast, clean, and easy for clients to manage. But when a project needs something more custom and scalable, I go full-stack with the MERN stack (MongoDB, Express, React, Node.js).
+                                            <p className=''>
+                                                Now? I build web solutions. <span className='font-bold'>I&apos;ve made websites, landing pages, tournament management tools, MVPs—you name it!</span>
                                             </p>
-                                            <p>
-                                                I’ve worked on everything from MVPs and tournament tools to full-on web apps—and I’m always exploring, always building. Got an idea? Let’s chat and make it real.
+                                            <p className=''>
+                                                I&apos;m skilled in the MERN stack and always looking to learn more. If you have an idea for a web app and need someone to bring it to life, hit me up and let&apos;s discuss.
                                             </p>
                                         </div>
-
 
                                         <div className='pt-7'>
                                             <a href='#contact'>
@@ -292,7 +275,7 @@ export default function Homepage() {
 
                 <div
                     ref={ref}
-                    className="flex flex-col md:flex-row px-4 py-10 md:py-20 justify-between text-textGreen text-center max-w-[1220px] m-auto"
+                    className="flex flex-col md:flex-row px-4 py-10 md:py-20 justify-between w-[75%] m-auto text-textGreen text-center"
                 >
                     {stats.map((item, index) => (
                         <div
@@ -324,15 +307,12 @@ export default function Homepage() {
 
             <div id="portfolio">
                 <div className='projects bg-darkGreen text-white py-6'>
-                    <div className='max-w-[1220px] m-auto'>
-                        <div className='pt-12 pb-4'>
-                            <p className='text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>My <span className='text-orange'>key</span> projects</p>
-                        </div>
-                        <div className=''>
-                            <LayoutGridDemo />
-                        </div>
+                    <div className='pt-12 pb-4'>
+                        <p className='text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>My <span className='text-orange'>key</span> projects</p>
                     </div>
-
+                    <div className='w-[80%] m-auto'>
+                        <LayoutGridDemo />
+                    </div>
 
                 </div>
                 <Image className='' src={Ending} alt='' />
@@ -382,7 +362,7 @@ export default function Homepage() {
 
 
                 <hr className='bg-darkGreen h-0.5 mb-2' />
-                <div className='max-w-[1220px] m-auto pb-24 pt-12 px-4'>
+                <div className='w-[80%] md:w-[75%] m-auto pb-24 pt-12 px-5'>
                     <div className='pb-8 pt-3'>
                         <h2 className='text-center py-4 text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-textGreen'>Find <span className='text-orange'>me</span> on</h2>
                     </div>
