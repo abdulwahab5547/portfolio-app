@@ -14,7 +14,8 @@ const config: Config = {
         textGreen: '#183121',
         greenInput: '#2B4434',
         orange: '#E45910',
-        offwhite: '#F1F7F3'
+        offwhite: '#F1F7F3',
+        cardBorder: "#3D5545",
       },
     },
   },

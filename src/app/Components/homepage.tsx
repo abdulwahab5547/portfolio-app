@@ -29,7 +29,8 @@ import Instagram from '../../assets/instagram.webp'
 import X from '../../assets/x.webp'
 import GitHub from '../../assets/github.png'
 
-import { LayoutGridDemo } from './layoutdemo';
+// import { LayoutGridDemo } from './layoutdemo';
+import Projects from './homepage/Projects';
 
 export default function Homepage() {
     const [activeLink, setActiveLink] = useState('home'); // State to track active link
@@ -173,22 +174,20 @@ export default function Homepage() {
                     <div className='px-5'>
                         <h1 className='py-4 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold no-select'>Custom websites that <br /> help your brand <span className='text-orange'>grow.</span> </h1>
                         <p className='py-4 text-xl md:text-2xl lg:text-2xl   text-gray-400'>WordPress or fully coded,<br /> built to fit your needs.</p>
-                        <div className='py-4'
-                            data-aos="zoom-in"
-                            data-aos-duration="1500"
-                        >
-                            <a href='#contact'>
-                                <button className='bg-orange hover:opacity-80 px-6 py-3  md:px-6 lg:px-9 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>Start Now</button>
+                        <div className='py-4' data-aos="zoom-in" data-aos-duration="1500">
+                            <a href='https://forms.gle/Ke6qhXuFCbNqxxua7' target="_blank" rel="noopener noreferrer">
+                                <button className='bg-orange hover:opacity-80 px-6 py-3 md:px-6 lg:px-9 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>
+                                    Get Yours Today
+                                </button>
                             </a>
                         </div>
                     </div>
-
                 </div>
 
 
                 <div className='pb-14 pt-5 max-w-[600px] m-auto md:px-0 px-4'>
                     <div className='flex justify-center pb-2'>
-                        <Image alt='Maleeha' src={Maleeha} className='max-w-[80px] max-h-[80px] rounded-full' />
+                        <Image alt='Maleeha' src={Maleeha} className='md:max-w-[80px] md:max-h-[80px] max-w-[45px] max-h-[45px] rounded-full' />
                     </div>
                     <p className='pt-2  text-sm sm:text-lg md:text-xl lg:text-xl text-center text-gray-400 font-bold'>Maleeha Asif - Business Owner</p>
 
@@ -265,13 +264,13 @@ export default function Homepage() {
                                         </div>
 
 
-                                        <div className='pt-7'>
+                                        {/* <div className='pt-7'>
                                             <a href='#contact'>
                                                 <button className='bg-orange hover:opacity-80 text-white px-3 sm:px-4 md:px-6 lg:px-9 py-2 sm:py-3 md:py-4 lg:py-5 text-md sm:text-xl md:text-xl lg:text-xl rounded-full font-bold'>
                                                     <span>Contact Me<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></span>
                                                 </button>
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -328,9 +327,11 @@ export default function Homepage() {
                         <div className='pt-12 pb-4'>
                             <p className='text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>My <span className='text-orange'>key</span> projects</p>
                         </div>
-                        <div className=''>
+                        {/* <div className=''>
                             <LayoutGridDemo />
-                        </div>
+                        </div> */}
+
+                        <Projects />
                     </div>
 
 
@@ -382,7 +383,7 @@ export default function Homepage() {
 
 
                 <hr className='bg-darkGreen h-0.5 mb-2' />
-                <div className='max-w-[1220px] m-auto pb-24 pt-12 px-4'>
+                <div className='max-w-[1220px] m-auto md:pb-24 pb-14 pt-12 px-4'>
                     <div className='pb-8 pt-3'>
                         <h2 className='text-center py-4 text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-textGreen'>Find <span className='text-orange'>me</span> on</h2>
                     </div>

@@ -9,12 +9,15 @@ function Footer() {
                         <p className=""><span className="text-xl sm:text-2xl md:text-3xl font-bold">AW. </span><span className="text-orange text-xl sm:text-2xl md:text-3xl">|</span> <span className="text-md sm:text-xl md:text-2xl pb-2 font-bold">Abdul Wahab</span></p>
                     </div>
                     <div className="py-4">
-                        <ul className="nav-icons flex flex-col md:flex-row gap-5">
+                        {/* <ul className="nav-icons flex flex-col md:flex-row gap-5">
                             <li className="hover:text-orange"><a href="/#home">Home</a></li>
                             <li className="hover:text-orange"><a href="/#about">About</a></li>
                             <li className="hover:text-orange"><a href="/#portfolio">Portfolio</a></li>
-                            <li className="hover:text-orange"><a href="/#contact">Contact</a></li>
-                        </ul>
+                        </ul> */}
+                        <div>
+                            <i className="fa-solid fa-envelope"></i>
+                            <a href="mailto:abdulwahab5547@gmail.com" className="pl-2">abdulwahab5547@gmail.com</a>
+                        </div>
                     </div>
                 </div>
                 <div className="md:px-10 px-4 pb-8 ">

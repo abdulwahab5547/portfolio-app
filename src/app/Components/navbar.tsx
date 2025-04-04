@@ -16,7 +16,7 @@ export default function Navbar({ activeLink }: NavbarProps) {
     return (
         <div className="relative">
             <div className="navbar bg-darkGreen">
-                <div className="nav-inner flex items-center px-8 py-4 text-white md:max-w-[1280px] md:m-auto">
+                <div className="nav-inner flex items-center px-4 py-4 text-white md:max-w-[1280px] md:m-auto">
                     <div className="w-[33%] site-icon-div">
                         <p>
                             <a href="#home">
@@ -31,22 +31,21 @@ export default function Navbar({ activeLink }: NavbarProps) {
                             <li className={`hover:text-orange ${activeLink === 'home' ? 'text-orange' : ''}`}><a href="/#home">Home</a></li>
                             <li className={`hover:text-orange ${activeLink === 'about' ? 'text-orange' : ''}`}><a href="/#about">About</a></li>
                             <li className={`hover:text-orange ${activeLink === 'portfolio' ? 'text-orange' : ''}`}><a href="/#portfolio">Portfolio</a></li>
-                            <li className={`hover:text-orange ${activeLink === 'contact' ? 'text-orange' : ''}`}><a href="/#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div className="nav-buttons flex gap-5 w-[%33] ml-auto nav-buttons-div">
 
                         <a href="/#portfolio" className="inline-block">
                             <button className="bg-lightGreen hover:opacity-80 font-semibold px-5 py-3 rounded-full">
-                                See My Work
+                                My Projects
                                 <span className="pl-3">
                                     <i className="fa-solid fa-arrow-right"></i>
                                 </span>
                             </button>
                         </a>
-                        <a href="/#contact" className="inline-block">
+                        <a href="https://calendly.com/abdulwahabasif/website-project-discussion" target="_blank" rel="noopener noreferrer" className="inline-block">
                             <button className="bg-orange hover:opacity-80 font-semibold px-5 py-3 rounded-full">
-                                Contact Me
+                                Book a Call
                                 <span className="pl-3">
                                     <i className="fa-solid fa-arrow-right"></i>
                                 </span>
@@ -72,12 +71,11 @@ export default function Navbar({ activeLink }: NavbarProps) {
                             <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'home' ? 'text-orange' : ''} py-1`}><a href="/#home">Home</a></li>
                             <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'about' ? 'text-orange' : ''} py-1`}><a href="/#about">About</a></li>
                             <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'portfolio' ? 'text-orange' : ''} py-1`}><a href="/#portfolio">Portfolio</a></li>
-                            <li onClick={hidePhoneNav} className={`hover:text-orange ${activeLink === 'contact' ? 'text-orange' : ''} py-1`}><a href="/#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div className="flex flex-col pt-3 items-center">
-                        <button onClick={hidePhoneNav} className="bg-orange my-3 w-fit hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="/#contact">Contact Me<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
-                        <button onClick={hidePhoneNav} className="bg-lightGreen my-3 w-fit hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="/#portfolio">See My Work<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
+                        <button onClick={hidePhoneNav} className="bg-orange my-3 w-fit hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="https://calendly.com/abdulwahabasif/website-project-discussion">Book a Call<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
+                        <button onClick={hidePhoneNav} className="bg-lightGreen my-3 w-fit hover:opacity-80 font-semibold px-5 py-3 rounded-full"><a href="/#portfolio">My Projects<span className="pl-3"><i className="fa-solid fa-arrow-right"></i></span></a></button>
                     </div>
                     <div className="py-3 pt-5">
                         <ul className="footer-icons flex gap-10 text-xl md:text-2xl">
